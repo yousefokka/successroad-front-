@@ -1,0 +1,837 @@
+html {
+  scroll-behavior: smooth;
+  behavior: initial;
+  -ms-behavior: inherit;
+}‏
+
+body{
+    background-color: #dadada;
+}
+
+
+#logo1{
+
+    text-align: center;
+    height: 70px;
+    width: 90px;
+}
+
+#pgtitle{
+
+
+  color: #0F395E;  
+  font-size: 24px;
+  font-family: Segoe UI;
+  font-weight: 600;
+
+}
+#srtitle{
+
+    margin: 0auto;
+    padding-top: 10px;
+  
+  color: #0F395E;  
+  font-size: 24px;
+  font-family: Segoe UI;
+  font-weight:normal;
+}
+
+
+
+
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #dadada;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background-image: linear-gradient(#e7e7e7,#d8d8d8);
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    background-color: #0F395E;
+    border: none;
+}
+
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 30px 0;
+}
+.line1 {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #555;
+    margin: 30px 0;
+}
+
+i,
+span {
+    display: inline-block;
+}
+
+
+
+
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+/* ---------------------------------------------------
+    Nav bar
+----------------------------------------------------- */
+
+#navbarSupportedContent .nav-link{
+
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+
+}
+#navbarSupportedContent.active ul ul a {
+    padding: 10px !important;
+}
+
+#navbarSupportedContent ul li a:hover {
+    color: black;
+    background-color: rgb(163, 163, 163);
+}
+
+#navbarSupportedContent ul li a i {
+    margin-right: 10px;
+}
+#navbarSupportedContent ul li a.notactive:hover {
+    color: #0F395E;
+    background-color:transparent;
+}
+
+
+
+#navbarSupportedContent ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background-color: #0F395E;
+
+}
+
+#navbarSupportedContent ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: #0F395E;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#space{
+    height: 25px;
+}
+#space1{
+    height: 10px;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #side {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+        margin-left: -80px !important;
+    }
+    
+}
+
+
+#location{
+
+    margin-top: 10px;
+    padding-top: 10px;
+    top: 10px;
+    text-align: center;
+    font-size: large;
+    align-items: center;
+    align-content: center;
+}
+.txts{
+
+    padding:10px;
+}
+#jbdet{
+
+    font-size: small;
+    color: #184C75;
+}
+#ocon{
+
+    font-size: small;
+}
+#txs{
+
+    font-size: small;
+}
+
+#conte{  /*main content*/
+
+    padding :15px;
+    margin-top: 20px;
+}
+#bttn{
+
+    font-size: small;
+}
+#new-board-btn {
+    white-space: normal;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding: 12px;
+    color: #0F395E;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #0F395E;
+    border-width: 3px;
+    border-radius: 0;
+    margin: 0auto;
+    
+}
+#new-board-btn1 {
+    white-space: normal;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    color: whitesmoke;
+    background-color: #0F395E;
+    border-radius: 0;
+    border-style: none;
+    
+}
+
+
+/* New Data Css*/
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {height:auto}
+  
+  /* Set gray background color and 100% height */
+  .sidenav {
+    background-image:linear-gradient( #e7e7e7,#d8d8d8);
+    height: 600px;
+    width: 260px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow:  5px 5px 5px  #bdbdbd;
+  }
+  
+  /* Set black background color, white text and some padding */
+
+  .img-responsive {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .centerImage {height:auto;width:auto;}
+    .row.content {height:auto;} 
+  }
+  .text-center{ 
+
+    padding-top: 50px;
+  }
+  /*tzbet l icons gwa ltabel*/
+  .iconsize{
+    font-size: 15px;
+    color:#184C75;
+  }
+/*tzbeet llcontent buttons */
+
+.applybtn{
+    background-image:linear-gradient(#1B75CD,#184C75);
+    border: #1B75CD; 
+    color: #ffffff; 
+    border-radius: 20px; 
+    width: 8rem; 
+    height: 2.2rem;
+  
+}
+.applybtn:hover{
+  background-image:linear-gradient(#2b88e6,#277ed4) ;
+}
+/*love button*/
+
+.lovebtn {
+    background-color: #d8d8d8; 
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #184C75;
+    height: 40px;
+    width: 40px;
+    align-items: center; 
+    margin-right: 7px;
+}
+ #btns{
+   align-self: center;
+ }
+
+
+.form-control{
+    background-color: #bdbdbd;
+}
+
+
+/*start content search bar navigation*/
+        .topnav {
+          overflow: hidden;
+          background-color: #e7e7e7;
+          box-shadow:  5px 5px 5px  #bdbdbd;
+        }
+
+        .topnav .search-container {/*bt7km flsearch bar*/
+          margin-left: 10px;
+          height: 53px;
+        }
+        
+        .topnav input[type=text] {
+          padding: 6px;
+          margin-top: 8px;
+          font-size: 17px;
+          border: none;
+          background-color: #d5d5d5;
+        }
+        
+        .topnav .search-container button {
+          float: right;
+          padding: 6px 10px;
+          margin-top: 5px;
+          margin-right: 16px;
+          background: #175a9e;
+          color: white;
+          fohtml {
+  scroll-behavior: smooth;
+  behavior: initial;
+  -ms-behavior: inherit;
+}‏
+
+body{
+    background-color: #dadada;
+}
+
+
+#logo1{
+
+    text-align: center;
+    height: 70px;
+    width: 90px;
+}
+
+#pgtitle{
+
+
+  color: #0F395E;  
+  font-size: 24px;
+  font-family: Segoe UI;
+  font-weight: 600;
+
+}
+#srtitle{
+
+    margin: 0auto;
+    padding-top: 10px;
+  
+  color: #0F395E;  
+  font-size: 24px;
+  font-family: Segoe UI;
+  font-weight:normal;
+}
+
+
+
+
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #dadada;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background-image: linear-gradient(#e7e7e7,#d8d8d8);
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    background-color: #0F395E;
+    border: none;
+}
+
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 30px 0;
+}
+.line1 {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #555;
+    margin: 30px 0;
+}
+
+i,
+span {
+    display: inline-block;
+}
+
+
+
+
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+/* ---------------------------------------------------
+    Nav bar
+----------------------------------------------------- */
+
+#navbarSupportedContent .nav-link{
+
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+
+}
+#navbarSupportedContent.active ul ul a {
+    padding: 10px !important;
+}
+
+#navbarSupportedContent ul li a:hover {
+    color: black;
+    background-color: rgb(163, 163, 163);
+}
+
+#navbarSupportedContent ul li a i {
+    margin-right: 10px;
+}
+#navbarSupportedContent ul li a.notactive:hover {
+    color: #0F395E;
+    background-color:transparent;
+}
+
+
+
+#navbarSupportedContent ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background-color: #0F395E;
+
+}
+
+#navbarSupportedContent ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: #0F395E;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#space{
+    height: 25px;
+}
+#space1{
+    height: 10px;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #side {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+        margin-left: -80px !important;
+    }
+    
+}
+
+
+#location{
+
+    margin-top: 10px;
+    padding-top: 10px;
+    top: 10px;
+    text-align: center;
+    font-size: large;
+    align-items: center;
+    align-content: center;
+}
+.txts{
+
+    padding:10px;
+}
+#jbdet{
+
+    font-size: small;
+    color: #184C75;
+}
+#ocon{
+
+    font-size: small;
+}
+#txs{
+
+    font-size: small;
+}
+
+#conte{  /*main content*/
+
+    padding :15px;
+    margin-top: 20px;
+}
+#bttn{
+
+    font-size: small;
+}
+#new-board-btn {
+    white-space: normal;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding: 12px;
+    color: #0F395E;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #0F395E;
+    border-width: 3px;
+    border-radius: 0;
+    margin: 0auto;
+    
+}
+#new-board-btn1 {
+    white-space: normal;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    color: whitesmoke;
+    background-color: #0F395E;
+    border-radius: 0;
+    border-style: none;
+    
+}
+
+
+/* New Data Css*/
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {height:auto}
+  
+  /* Set gray background color and 100% height */
+  .sidenav {
+    background-image:linear-gradient( #e7e7e7,#d8d8d8);
+    height: 600px;
+    width: 260px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow:  5px 5px 5px  #bdbdbd;
+  }
+  
+  /* Set black background color, white text and some padding */
+
+  .img-responsive {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .centerImage {height:auto;width:auto;}
+    .row.content {height:auto;} 
+  }
+  .text-center{ 
+
+    padding-top: 50px;
+  }
+  /*tzbet l icons gwa ltabel*/
+  .iconsize{
+    font-size: 15px;
+    color:#184C75;
+  }
+/*tzbeet llcontent buttons */
+
+.applybtn{
+    background-image:linear-gradient(#1B75CD,#184C75);
+    border: #1B75CD; 
+    color: #ffffff; 
+    border-radius: 20px; 
+    width: 8rem; 
+    height: 2.2rem;
+  
+}
+.applybtn:hover{
+  background-image:linear-gradient(#2b88e6,#277ed4) ;
+}
+/*love button*/
+
+.lovebtn {
+    background-color: #d8d8d8; 
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #184C75;
+    height: 40px;
+    width: 40px;
+    align-items: center; 
+    margin-right: 7px;
+}
+ #btns{
+   align-self: center;
+ }
+
+
+.form-control{
+    background-color: #bdbdbd;
+}
+
+
+/*start content search bar navigation*/
+        .topnav {
+          overflow: hidden;
+          background-color: #e7e7e7;
+          box-shadow:  5px 5px 5px  #bdbdbd;
+        }
+
+        .topnav .search-container {/*bt7km flsearch bar*/
+          margin-left: 10px;
+          height: 53px;
+        }
+        
+        .topnav input[type=text] {
+          padding: 6px;
+          margin-top: 8px;
+          font-size: 17px;
+          border: none;
+          background-color: #d5d5d5;
+        }
+        
+        .topnav .search-container button {
+          float: right;
+          padding: 6px 10px;
+          margin-top: 5px;
+          margin-right: 16px;
+          background: #175a9e;
+          color: white;
+          font-size: 20px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .topnav .search-container button:hover {
+          background-image:linear-gradient(#2b88e6,#277ed4) ;
+        }
+        /**
+        @media screen and (max-width: 600px) {
+          .topnav .search-container {
+            float: none;
+          }
+        }
+        /*end search bar nav content*/
+        @media screen and (max-width: 450px) {
+            .topnav .search-container {
+              float: none;
+              width: 300px;
+            }
+          }
+
+
+        /*start footer adj*/
+        /* Create four equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 25%;
+         
+          text-align: left; /* Should be removed. Only for demonstration */
+        }
+        .columntow{
+          float: left;
+          width: 25%;
+          
+        }
+        .columnthree{
+          float: left;
+          width: 25%;
+          position: relative;
+          bottom: 45px;
+        }
+        .columnfour{
+          float: left;
+          width: 25%;
+          padding-right: 20px;
+        }  
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        .line2 {
+          border-left: 4px solid whitesmoke;
+          height: 350px;
+          margin-left: 200px;
+          margin-top: 20px;
+        }
+        #footrow{
+            padding:  10px 50px 0px 50px; 
+        }
+        footer {
+          background-color: #184C75;
+          color: white;
+          
+          
+        }
+        /*End footer adj*/
+
+        .row1{/*dashed line for content fram*/
+          border-style: dashed;
+          border-width: 0px 0.5px 0.5px 0.5px;
+          padding: 20px;
+        }

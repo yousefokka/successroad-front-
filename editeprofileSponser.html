@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Success Road</title>
+    <link class="iconr" rel="icon" href="./assets/drklogo.png">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./css/editeprofileSponser.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> <!-- load jquery via CDN -->
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container conta">
+
+        <div class="row"  id="row">
+            <div class="container-fluid frist">
+                <div class="tite">
+                    <h1>Welcome , <span id="username">Khaled</span>!</h1>
+                </div>
+                <div>
+                    <h5>
+                        User Type : <span id="usertype">Sponser</span>
+                    </h5>
+                </div>
+             </div>
+        </div>
+
+        <div class="row row1" id="row">
+            <div class="heading">
+                    <h5>User information</h5>
+            </div>
+            <div class="container-fluid frist1">
+                <form >
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="fName">Name</label>
+                            <input type="text" class="form-control" id="inputAddressLine1" placeholder="Frist Name" name="name">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputAddressLine2">Email</label>
+                            <input type="text" class="form-control" id="inputAddressLine2" placeholder="Someone@email.com" name="email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="phoneno">Phone</label>
+                            <input type="text" class="form-control" id="inputAddressLine1" placeholder="+201111111111" name="phone">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputAddressLine2">Gender</label>
+                            <input type="text" class="form-control" id="inputAddressLine2" placeholder="Gender" name="Gander">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="inputCity">Address</label>
+                            <input type="text" class="form-control" id="inputCity" placeholder="Address" name="Address">
+                        </div>
+                        
+                    </div> 
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <div class="row row1" id="row">
+            <div class="heading">
+                    <h5>Basic information</h5>
+            </div>
+            <div class="container-fluid frist1">
+                <form >
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="fName">Category</label>
+                            <input type="text" class="form-control" id="inputAddressLine1" placeholder="Category" name="Catagory">
+                        </div>
+                        <div class="col-6">
+                            <label for="lName">Funding</label>
+                            <input type="text" class="form-control" id="inputLastname" placeholder="$100000" name="Funding">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="phoneno">Type of mangement</label>
+                            <input type="text" class="form-control" id="inputAddressLine1" placeholder="Type" name="Typemanagment">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputAddressLine2">Experience</label>
+                            <input type="text" class="form-control" id="inputAddressLine2" placeholder="Experience" name="exprience">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <label for="inputContactNumber">Intereset</label>
+                            <input type="text" class="form-control" id="jbdesc" placeholder="Intereset" name="sponcerBio">
+                        </div>
+                    </div> 
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <div class="row row1" id="row">
+            <div class="heading">
+                    <h5>Security</h5>
+            </div>
+            <div class="container-fluid frist1">
+                <form >
+                    <div class="form-group row">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <label for="fName">New password</label>
+                            <input type="password" class="form-control" id="inputAddressLine1" placeholder="***********" name="password">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <label for="phoneno">New password confirmation</label>
+                            <input type="password" class="form-control" id="inputAddressLine1" placeholder="***********" name="confpassword">
+
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox_1">
+                                <label for="checkbox_1">Make this account public</label>
+                                <br><br>
+                                <button type="button" class="btn btn-primary" id="upload">Submit</button>
+                                <button type="reset" id="cancel" class="btn btn-default">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+
+    
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script src="js/editeprofileSponser.js"><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Success Road</title>
+    <link class="iconr" rel="icon" href="./assets/drklogo.png">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./css/editeprofileSponser.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> <!-- load jquery via CDN -->
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container conta">
+
+        <div class="row"  id="row">
+            <div class="container-fluid frist">
+                <div class="tite">
+                    <h1>Welcome , <span id="username">Khaled</span>!</h1>
+                </div>
+                <div>
+                    <h5>
+                        User Type : <span id="usertype">Sponser</span>
+                    </h5>
+                </div>
+             </div>
+        </div>
+
+        <div class="row row1" id="row">
+            <div class="heading">
+                    <h5>User information</h5>
+            </div>
+            <div class="container-fluid frist1">
+                <form >
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="fName">Name</label>
+                            <input type="text" class="form-control" id="inputAddressLine1" placeholder="Frist Name" name="name">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputAddressLine2">Email</label>
+                            <input type="text" class="form-control" id="inputAddressLine2" placeholder="Someone@email.com" name="email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="phoneno">Phone</label>
+                            <input type="text" class="form-control" id="inputAddressLine1" placeholder="+201111111111" name="phone">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputAddressLine2">Gender</label>
+                            <input type="text" class="form-control" id="inputAddressLine2" placeholder="Gender" name="Gander">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="inputCity">Address</label>
+                            <input type="text" class="form-control" id="inputCity" placeholder="Address" name="Address">
+                        </div>
+                        
+                    </div> 
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <div class="row row1" id="row">
+            <div class="heading">
+                    <h5>Basic information</h5>
+            </div>
+            <div class="container-fluid frist1">
+                <form >
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="fName">Category</label>
+                            <input type="text" class="form-control" id="inputAddressLine1" placeholder="Category" name="Catagory">
+                        </div>
+                        <div class="col-6">
+                            <label for="lName">Funding</label>
+                            <input type="text" class="form-control" id="inputLastname" placeholder="$100000" name="Funding">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="phoneno">Type of mangement</label>
+                            <input type="text" class="form-control" id="inputAddressLine1" placeholder="Type" name="Typemanagment">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputAddressLine2">Experience</label>
+                            <input type="text" class="form-control" id="inputAddressLine2" placeholder="Experience" name="exprience">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <label for="inputContactNumber">Intereset</label>
+                            <input type="text" class="form-control" id="jbdesc" placeholder="Intereset" name="sponcerBio">
+                        </div>
+                    </div> 
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <div class="row row1" id="row">
+            <div class="heading">
+                    <h5>Security</h5>
+            </div>
+            <div class="container-fluid frist1">
+                <form >
+                    <div class="form-group row">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <label for="fName">New password</label>
+                            <input type="password" class="form-control" id="inputAddressLine1" placeholder="***********" name="password">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <label for="phoneno">New password confirmation</label>
+                            <input type="password" class="form-control" id="inputAddressLine1" placeholder="***********" name="confpassword">
+
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox_1">
+                                <label for="checkbox_1">Make this account public</label>
+                                <br><br>
+                                <button type="button" class="btn btn-primary" id="upload">Submit</button>
+                                <button type="reset" id="cancel" class="btn btn-default">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+
+    
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script src="js/editeprofileSponser.js"></script>
+</body>
+</html>

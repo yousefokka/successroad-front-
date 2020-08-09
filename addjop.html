@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Success Road</title>
+    <link class="iconr" rel="icon" href="./assets/drklogo.png">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./css/styleaddjop.css">
+    <!-- Ajax File-->    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> <!-- load jquery via CDN -->
+    <!-- FontAwesome File-->
+    <script src="./js/all.min.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><img src="./assets/drklogo.png" alt="logo" id="logo1"> <br>Success Road</h3>
+                <strong>SR</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="titls">
+                    <div id="titlesedit">
+                        
+                        Main
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="active">   
+                    <a href="">
+                        <i class="fas fa-plus"></i>
+                        Add a New Job
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="addidea.html">
+                        <i class="fas fa-plus"></i>
+                        Add a New Idea
+                    </a>
+                </li>
+                <li>
+                    <a href="index4managejob.html">
+                        <i class="fas fa-briefcase"></i>
+                        Manages Jobs
+                    </a>
+                </li>
+                <li>
+                    <a href="index3manageidea.html">
+                        <i class="fas fa-briefcase"></i>
+                        Manage Ideas
+                    </a>
+                </li>
+                <li class="titls">
+                    <div id="titlesedit">
+                        
+                        Account
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+            </ul>
+
+            
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <!--Start Nav-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" >
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link notactive" href="#">Hi, <spam id="name">Khaaledd</spam></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="addjop.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="CompanyProfile.html">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="logout">
+                                    <i class="fa fa-sign-out-alt"></i>     
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--End navbar-->
+            <div>
+                
+
+                <div class="container py-12" id="hed">
+                    <div class="row">
+                        <div class="col-md-12 mx-auto" >
+                            <div class="line"></div>
+                            <h5 id="pgtitle">Add a New Job   </h5>
+                            <div class="line"></div>
+
+                            <form >
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label for="Jtitle"> Job Title</label>
+                                        <input type="text" class="form-control" id="inputAddressLine1" placeholder="Job Title" name="title">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="jbtyb">Job Type</label>
+                                        <input type="text" class="form-control" id="inputLastname" placeholder="Job type" name="jtype">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label for="jbtyb">Job Category</label>
+                                        <input type="text" class="form-control" id="inputAddressLine1" placeholder="Job Category" name="catagory">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="inputAddressLine2">Address</label>
+                                        <input type="text" class="form-control" id="inputAddressLine2" placeholder="Address" name="adrs">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label for="inputCity">Salary</label>
+                                        <input type="text" class="form-control" id="inputCity" placeholder="Salary" name="salary">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="inputState">Gender</label>
+                                        <select class="form-control" name="gender">
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="other">Both ..</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label for="inputContactNumber">Country</label>
+                                        <input type="text" class="form-control" id="inputContactNumber" placeholder="Country" name="country">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="inputWebsite">Experience</label>
+                                        <input type="text" class="form-control" id="inputWebsite" placeholder="Experience" name="experience">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label for="inputContactNumber">Qualification</label>
+                                        <input type="text" class="form-control" id="inputContactNumber" placeholder="Qualification" name="qualification">
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-group row">
+                           <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Success Road</title>
+    <link class="iconr" rel="icon" href="./assets/drklogo.png">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./css/styleaddjop.css">
+    <!-- Ajax File-->    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> <!-- load jquery via CDN -->
+    <!-- FontAwesome File-->
+    <script src="./js/all.min.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><img src="./assets/drklogo.png" alt="logo" id="logo1"> <br>Success Road</h3>
+                <strong>SR</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="titls">
+                    <div id="titlesedit">
+                        
+                        Main
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="active">   
+                    <a href="">
+                        <i class="fas fa-plus"></i>
+                        Add a New Job
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="addidea.html">
+                        <i class="fas fa-plus"></i>
+                        Add a New Idea
+                    </a>
+                </li>
+                <li>
+                    <a href="index4managejob.html">
+                        <i class="fas fa-briefcase"></i>
+                        Manages Jobs
+                    </a>
+                </li>
+                <li>
+                    <a href="index3manageidea.html">
+                        <i class="fas fa-briefcase"></i>
+                        Manage Ideas
+                    </a>
+                </li>
+                <li class="titls">
+                    <div id="titlesedit">
+                        
+                        Account
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+            </ul>
+
+            
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <!--Start Nav-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" >
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link notactive" href="#">Hi, <spam id="name">Khaaledd</spam></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="addjop.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="CompanyProfile.html">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="logout">
+                                    <i class="fa fa-sign-out-alt"></i>     
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--End navbar-->
+            <div>
+                
+
+                <div class="container py-12" id="hed">
+                    <div class="row">
+                        <div class="col-md-12 mx-auto" >
+                            <div class="line"></div>
+                            <h5 id="pgtitle">Add a New Job   </h5>
+                            <div class="line"></div>
+
+                            <form >
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label for="Jtitle"> Job Title</label>
+                                        <input type="text" class="form-control" id="inputAddressLine1" placeholder="Job Title" name="title">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="jbtyb">Job Type</label>
+                                        <input type="text" class="form-control" id="inputLastname" placeholder="Job type" name="jtype">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label for="jbtyb">Job Category</label>
+                                        <input type="text" class="form-control" id="inputAddressLine1" placeholder="Job Category" name="catagory">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="inputAddressLine2">Address</label>
+                                        <input type="text" class="form-control" id="inputAddressLine2" placeholder="Address" name="adrs">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label for="inputCity">Salary</label>
+                                        <input type="text" class="form-control" id="inputCity" placeholder="Salary" name="salary">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="inputState">Gender</label>
+                                        <select class="form-control" name="gender">
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="other">Both ..</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label for="inputContactNumber">Country</label>
+                                        <input type="text" class="form-control" id="inputContactNumber" placeholder="Country" name="country">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="inputWebsite">Experience</label>
+                                        <input type="text" class="form-control" id="inputWebsite" placeholder="Experience" name="experience">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label for="inputContactNumber">Qualification</label>
+                                        <input type="text" class="form-control" id="inputContactNumber" placeholder="Qualification" name="qualification">
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <label for="inputContactNumber">Job Description</label>
+                                        <input type="text" class="form-control" id="jbdesc" placeholder="Job Description" name="description">
+                                    </div>
+                                    
+                                </div>
+                                <div class="line"></div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <button type="button" class="btn btn-primary px-4 float-right" id="upload">Add Job</button>
+                                    </div>
+                                    
+                                </div>
+                                
+                               
+                            </form>
+                        </div>
+                    </div>
+                </div>  
+                
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="./js/addJopApi.js"></script> <!-- load our javascript file -->
+    
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
